@@ -10,7 +10,7 @@ let colorIndex = 0;
 // =============================
 const members = [
     {
-        photo: "img/WhatsApp Image 2026-02-08 at 9.53.06 AM.jpeg",
+        photo: "img/WhatsApp Image 2026-03-03 at 12.19.08 PM.jpeg",
         desc: "Primer Integrante: Alondra Yaneli Boyzo Rodriguez - Soy estudiante de Ingeniería en Sistemas Computacionales."
     },
     {
