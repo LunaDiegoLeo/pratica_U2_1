@@ -15,7 +15,7 @@ const members = [
     },
     {
         photo: "img/image.jfif",
-        desc: "Segundo Integrante: Diego Leonardo Hernández Luna - Soy estudiante de Ingeniería en Sistemas Computacionales."
+        desc: "Segundo Integrante: Diego Leonardo Hernández Luna — Estudiante de Ingeniería en Sistemas Computacionales. Intereses: desarrollo web, algoritmos y bases de datos. Habilidades: JavaScript, Python y SQL. Rol en el proyecto: desarrollador frontend. Disfruta resolver problemas, aprender nuevas tecnologías y colaborar en equipo."
     }
 ];
 
