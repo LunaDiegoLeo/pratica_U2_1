@@ -1,22 +1,45 @@
-// Esperamos a que el DOM esté completamente cargado
-document.addEventListener("DOMContentLoaded", () => {
+// =============================
+// Arreglo de colores de fondo
+// =============================
+const colors = ["#f4f4f4", "#ffcccc", "#ccffcc", "#ccccff", "#ffffcc"];
+let colorIndex = 0;
 
-    const button = document.getElementById("colorButton");
 
-    // Verificamos que el botón exista
-    if (!button) {
-        console.error("No se encontró el botón con ID 'colorButton'");
-        return;
+// =============================
+// Datos de los integrantes
+// =============================
+const members = [
+    {
+        photo: "img/WhatsApp Image 2026-02-08 at 9.53.06 AM.jpeg",
+        desc: "Primer Integrante: Alondra Yaneli Boyzo Rodriguez - Soy estudiante de Ingeniería en Sistemas Computacionales."
+    },
+    {
+        photo: "img/image.jfif",
+        desc: "Segundo Integrante: Diego Leonardo Hernández Luna - Soy estudiante de Ingeniería en Sistemas Computacionales."
     }
+];
 
-    const colors = ["#f4f4f4", "#ffcccc", "#ccffcc", "#ccccff", "#ffffcc"];
-    let index = 0;
+let memberIndex = 0;
 
-    function changeBackgroundColor() {
-        document.body.style.backgroundColor = colors[index];
-        index = (index + 1) % colors.length; // Reinicio automático con módulo
-    }
 
-    button.addEventListener("click", changeBackgroundColor);
+// =============================
+// Evento: Cambio de color
+// =============================
+document.getElementById("colorButton").addEventListener("click", () => {
+    document.body.style.backgroundColor = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+});
 
+
+// =============================
+// Evento: Cambio de integrante
+// =============================
+document.getElementById("switchButton").addEventListener("click", () => {
+    memberIndex = (memberIndex + 1) % members.length;
+
+    document.getElementById("member-photo").src =
+        members[memberIndex].photo;
+
+    document.getElementById("member-desc").textContent =
+        members[memberIndex].desc;
 });
