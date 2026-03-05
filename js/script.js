@@ -22,6 +22,11 @@ const colors = [
 "#ffdead","#dda15e","#bc6c25","#8ecae6","#219ebc",
 "#023047","#ff006e","#8338ec","#3a86ff","#fb5607"
 ];
+const darkmodeColor=["#121212","#ffffff"];
+const darkmodeColordiv=["#5f5f5f","#ffffff"];
+const darkmodeText=["#ffffff","#000000"];
+const darkmodeText2=["#ffffff","#6c757d"];
+let darkmodeIndex=0;
 let colorIndex = 0;
 
 
@@ -48,6 +53,14 @@ let memberIndex = 0;
 document.getElementById("colorButton").addEventListener("click", () => {
     document.body.style.backgroundColor = colors[colorIndex];
     colorIndex = (colorIndex + 1) % colors.length;
+});
+
+document.getElementById("darkModeBtn").addEventListener("click", () => {
+    document.body.style.backgroundColor = darkmodeColor[darkmodeIndex];
+    document.getElementById("container").style.backgroundColor = darkmodeColordiv[darkmodeIndex];
+    document.getElementById("titulo").style.color = darkmodeText[darkmodeIndex];
+    document.getElementById("member-desc").style.color = darkmodeText2[darkmodeIndex];
+    darkmodeIndex = (darkmodeIndex + 1) % darkmodeColor.length;
 });
 
 
