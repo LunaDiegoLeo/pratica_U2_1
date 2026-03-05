@@ -1,7 +1,27 @@
 // =============================
 // Arreglo de colores de fondo
 // =============================
-const colors = ["#f4f4f4", "#ffcccc", "#ccffcc", "#ccccff", "#ffffcc"];
+const colors = [
+"#f4f4f4","#ffcccc","#ccffcc","#ccccff","#ffffcc",
+"#ff9999","#99ff99","#9999ff","#ffcc99","#cc99ff",
+"#66cccc","#ff6666","#66ff66","#6666ff","#ffcc66",
+"#66ffcc","#ccff66","#ff66cc","#c0c0c0","#ffb3ba",
+"#baffc9","#bae1ff","#ffffba","#ffdfba","#e2f0cb",
+"#c9c9ff","#ffd1dc","#d5b6ff","#b5ead7","#ffdac1",
+"#e0bbe4","#957dad","#fec8d8","#d291bc","#f6abb6",
+"#84a9ac","#3b6978","#204051","#e4e3e3","#ffaaa5",
+"#ffd3b6","#dcedc1","#a8e6cf","#ff8b94","#a0ced9",
+"#ffc3a0","#caffbf","#9bf6ff","#bdb2ff","#ffc6ff",
+"#fdffb6","#fffffc","#d0f4de","#fef9c3","#fcd5ce",
+"#fae1dd","#e2ece9","#bee1e6","#cdb4db","#ffc8dd",
+"#bde0fe","#a2d2ff","#ffadad","#ffd6a5","#fdffb6",
+"#caffbf","#9bf6ff","#a0c4ff","#bdb2ff","#ffc6ff",
+"#ffffba","#ffb7b2","#ffdac1","#e2f0cb","#b5ead7",
+"#c7ceea","#f1f0c0","#a1eafb","#ff9a8b","#ffb347",
+"#87cefa","#dda0dd","#98fb98","#ff7f7f","#40e0d0",
+"#ffdead","#dda15e","#bc6c25","#8ecae6","#219ebc",
+"#023047","#ff006e","#8338ec","#3a86ff","#fb5607"
+];
 let colorIndex = 0;
 
 
